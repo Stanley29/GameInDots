@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <title>Game In Dots</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+</head>
+<body>
+   <table style="width:100%">
+  
+  <tr >
+    <td style="width: 50%" class="top-row">
+
+      <div class="dropdown">
+        <button class="dropbtn" id="gameselector">Pick game mode</button>
+        <div class="dropdown-content">
+        <a href="#" id="select0" onClick="reply_click1(this.id)">Easy</a>
+        <a href="#" id="select1" onClick="reply_click1(this.id)">Normal</a>
+        <a href="#" id="select2" onClick="reply_click1(this.id)">Hard</a>
+      </div>
+      </div>
+      
+        <div class="dropdown">
+          <input type="text" class="input" name="firstname" id="first_name" required> 
+        </div>
+        <div class="dropdown">
+          <button class="button button4" id="playButton">PLAY</button>
+        </div>
+      
+      
+     
+    </td style="width: 50%" class="top-row">
+    <td>
+      <h2>Leader Board</h2>
+    </td>    
+  </tr>
+  <h1></h1>
+  <tr>
+    <td>
+      <h3 id="winner">Message here</h3>
+      <div class="game-content" id="game_div">
+        <table class="game" id="game_0">
+        <tr>
+          <td><button class="button1" id="btn0" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn1" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn2" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn3" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn4" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn5" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn6" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn7" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn8" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn9" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn10" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn11" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn12" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn13" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn14" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn15" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn16" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn17" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn18" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn19" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn20" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn21" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn22" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn23" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn24" onClick="reply_click(this.id)"></button></td>
+        </tr>
+      </table>
+      </br>
+      </br>
+      <table class="game01" id="game_1">
+        <tr>
+          <td><button class="button1" id="btn00" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn01" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn02" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn03" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn04" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn05" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn06" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn07" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn08" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn09" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn010" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn011" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn012" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn013" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn014" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn015" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn016" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn017" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn018" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn019" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn020" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn021" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn022" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn023" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn024" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn025" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn026" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn027" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn028" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn029" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn030" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn031" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn032" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn033" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn034" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn035" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn036" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn037" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn038" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn039" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn040" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn041" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn042" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn043" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn044" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn045" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn046" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn047" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn048" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn049" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn050" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn051" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn052" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn053" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn054" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn055" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn056" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn057" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn058" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn059" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn060" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn061" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn062" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn063" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn064" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn065" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn066" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn067" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn068" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn069" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn070" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn071" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn072" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn073" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn074" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn075" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn076" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn077" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn078" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn079" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn080" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn081" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn082" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn083" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn084" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn085" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn086" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn087" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn088" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn089" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button1" id="btn090" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn091" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn092" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn093" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn094" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn095" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn096" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn097" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn098" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button1" id="btn099" onClick="reply_click(this.id)"></button></td>
+        </tr>
+      </table>
+      </br>
+      </br>
+      <table class="game02" id="game_2">
+        <tr>
+          <td><button class="button2" id="btn000" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn001" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn002" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn003" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn004" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn005" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn006" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn007" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn008" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn009" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0010" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0011" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0012" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0013" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0014" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0015" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0016" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0017" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0018" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0019" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0020" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0021" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0022" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0023" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0024" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0025" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0026" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0027" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0028" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0029" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0030" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0031" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0032" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0033" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0034" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0035" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0036" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0037" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0038" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0039" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0040" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0041" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0042" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0043" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0044" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0045" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0046" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0047" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0048" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0049" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0050" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0051" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0052" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0053" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0054" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0055" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0056" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0057" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0058" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0059" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0060" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0061" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0062" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0063" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0064" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0065" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0066" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0067" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0068" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0069" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0070" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0071" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0072" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0073" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0074" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0075" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0076" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0077" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0078" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0079" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0080" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0081" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0082" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0083" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0084" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0085" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0086" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0087" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0088" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0089" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0090" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0091" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0092" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0093" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0094" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0095" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0096" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0097" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0098" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0099" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn00100" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn00101" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn00102" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn00103" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn00104" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0105" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0106" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0107" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0108" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0109" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0110" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0111" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0112" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0113" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0114" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0115" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0116" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0117" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0118" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0119" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0120" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0121" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0122" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0123" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0124" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0125" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0126" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0127" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0128" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0129" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0130" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0131" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0132" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0133" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0134" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0135" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0136" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0137" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0138" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0139" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0140" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0141" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0142" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0143" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0144" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0145" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0146" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0147" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0148" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0149" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0150" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0151" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0152" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0153" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0154" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0155" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0156" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0157" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0158" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0159" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0160" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0161" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0162" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0163" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0164" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0165" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0166" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0167" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0168" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0169" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0170" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0171" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0172" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0173" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0174" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0175" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0176" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0177" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0178" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0179" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0180" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0181" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0182" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0183" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0184" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0185" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0186" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0187" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0188" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0189" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0190" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0191" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0192" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0193" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0194" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0195" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0196" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0197" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0198" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0199" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0200" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0201" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0202" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0203" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0204" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0205" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0206" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0207" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0208" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0209" onClick="reply_click(this.id)"></button></td>
+        </tr>
+        <tr>
+          <td><button class="button2" id="btn0210" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0211" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0212" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0213" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0214" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0215" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0216" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0217" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0218" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0219" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0220" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0221" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0222" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0223" onClick="reply_click(this.id)"></button></td>
+          <td><button class="button2" id="btn0224" onClick="reply_click(this.id)"></button></td>
+        </tr>
+      </table>
+      </div>
+      
+    </td>
+    <td>
+      <div class="FixedHeightContainer">
+        <div class="Content">
+          <table class="board" id="winner_board">
+            <tr class="board-row">
+              <td>User Name</td>
+              <td>Date and Time</td>
+            </tr>
+            
+          </table>
+        </div>
+        
+      </div>
+      
+    </td>    
+  </tr>
+ 
+</table>
+<h1 id="test">Result transfer</h1>>
+<!--<h1 id="test1">Test Items</h1>
+<h1 id="test2">Test Items</h1>
+<h1 id="test3">Test Items</h1>
+<div id="json_result"></div>-->
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+    Copyright &copy; - 2020
+</html>
